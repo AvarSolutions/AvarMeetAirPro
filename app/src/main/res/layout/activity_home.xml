@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/teal_200"
     android:padding="10sp"
     tools:context=".Home">
 
@@ -41,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="name"
-            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -53,39 +52,54 @@
             android:layout_gravity="center"
             android:layout_marginTop="10sp"
             android:text="name"
-            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50sp"
-            android:fontFamily="@font/baloo"
-            android:text="Avar Meet Air Pro"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/secretCodeBox"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15sp"
-            android:gravity="center"
-            android:hint="Enter Meeting Room Code" />
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20sp">
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30sp"
-            android:backgroundTint="@color/black"
-            android:onClick="policy"
-            android:text="Join Meeting" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50sp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Avar Meet Air Pro"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/secretCodeBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:gravity="center"
+                    android:hint="Enter Meeting Room Code" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
+                    android:backgroundTint="@color/black"
+                    android:onClick="policy"
+                    android:text="Join Meeting" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:layout_width="match_parent"
